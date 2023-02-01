@@ -11,13 +11,14 @@ something isn't working, please file an issue
 [here](https://github.com/austinEng/webgpu-samples/issues).
 
 ## Building
+
 `webgpu-samples` is built with [Typescript](https://www.typescriptlang.org/)
 and compiled using [Next.js](https://nextjs.org/). Building the project
 requires an installation of [Node.js](https://nodejs.org/en/).
 
 - Install dependencies: `npm install`.
 - For development, start the dev server which will watch and recompile
-  sources: `npm start`. You can navigate to http://localhost:3000 to view the project.
+  sources: `npm start`. You can navigate to <http://localhost:3000> to view the project.
 - For production, compile the project: `npm run build`.
 - To run a production server to serve the built assets, do `npm run serve`.
 
@@ -28,3 +29,9 @@ npm install
 npm run-script build   # or `npm start` and do the following in a separate terminal
 npm run-script serve
 ```
+
+### Enable WebGPU on macOS
+
+Launch from the terminal:
+
+`$ open -a 'Google Chrome Canary' --args --enable-unsafe-gpu`
